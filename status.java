@@ -10,7 +10,7 @@ import java.util.concurrent.TimeUnit;
 public class status {
     public static void main(String[] args){
 
-        String urlStr = "http://88.250.204.138:1940/status.xml";
+        String urlStr = "http://88.250.204.138:1940/status.xml"; // bu siteden veriyi al 
 
         ScheduledExecutorService scheduler = Executors.newScheduledThreadPool(1);
         Runnable task = new Runnable(){
@@ -27,7 +27,7 @@ public class status {
                     scanner.close();
                     String xmlData = stringBuilder.toString();
 
-                    try (BufferedWriter writer = new BufferedWriter(new FileWriter("status.xml"))){
+                    try (BufferedWriter writer = new BufferedWriter(new FileWriter("status.xml"))){ // bu dosyaya yazdır
                         writer.write(xmlData);
                     } catch (IOException e) {
                         e.printStackTrace();
