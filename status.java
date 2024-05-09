@@ -12,7 +12,7 @@ public class status {
 
         String urlStr = "http://88.250.204.138:1940/status.xml"; // bu siteden veriyi al 
 
-        ScheduledExecutorService scheduler = Executors.newScheduledThreadPool(1);
+        ScheduledExecutorService scheduler = Executors.newScheduledThreadPool(1); // bir saniyede bir verileri yenile
         Runnable task = new Runnable(){
             @SuppressWarnings("deprecation")
             public void run() {
