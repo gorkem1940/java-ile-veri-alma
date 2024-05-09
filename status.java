@@ -39,6 +39,6 @@ public class status {
             }
         };
 
-        scheduler.scheduleAtFixedRate(task, 0, 1, TimeUnit.SECONDS);
+        scheduler.scheduleAtFixedRate(task, 0, 1, TimeUnit.SECONDS); // 1 saniyede bir verileri yenile
     }
 }
